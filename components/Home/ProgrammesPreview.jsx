@@ -10,15 +10,15 @@ export default function ProgrammesPreview() {
       <div className="container-content">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <SectionHeading
-            kicker="What we do"
-            title="Programmes built around real needs"
-            description="A few of the ways HSZPM shows up for its communities, week to week."
+            kicker="Where we stand"
+            title="Policy priorities for 2027"
+            description="A few of the issues APM says will define its case to Nigerians ahead of the general election."
           />
           <Link
             href="/programmes"
             className="text-green font-medium hover:text-green-dark whitespace-nowrap"
           >
-            View all programmes
+            View all policies
           </Link>
         </div>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -67,6 +67,34 @@ export function SanitationIcon(props) {
   );
 }
 
+export function ShieldIcon(props) {
+  return (
+    <svg viewBox="0 0 40 40" {...base} {...props}>
+      <path d="M20 6l12 4v9c0 8-5.3 13.6-12 15-6.7-1.4-12-7-12-15v-9l12-4z" />
+      <path d="M15 20l4 4 7-8" />
+    </svg>
+  );
+}
+
+export function BookIcon(props) {
+  return (
+    <svg viewBox="0 0 40 40" {...base} {...props}>
+      <path d="M20 12c-2.5-2-6-3-11-3v20c5 0 8.5 1 11 3" />
+      <path d="M20 12c2.5-2 6-3 11-3v20c-5 0-8.5 1-11 3" />
+      <path d="M20 12v20" />
+    </svg>
+  );
+}
+
+export function MapIcon(props) {
+  return (
+    <svg viewBox="0 0 40 40" {...base} {...props}>
+      <path d="M14 9l-8 3v19l8-3 12 3 8-3V9l-8 3-12-3z" />
+      <path d="M14 9v19M26 12v19" />
+    </svg>
+  );
+}
+
 export const programmeIcons = {
   youth: YouthIcon,
   women: WomenIcon,
@@ -74,4 +102,7 @@ export const programmeIcons = {
   medical: MedicalIcon,
   sports: SportsIcon,
   sanitation: SanitationIcon,
+  security: ShieldIcon,
+  education: BookIcon,
+  devolution: MapIcon,
 };

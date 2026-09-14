@@ -2,23 +2,23 @@ import PageHero from "@/components/UI/PageHero";
 import SectionHeading from "@/components/UI/SectionHeading";
 
 export const metadata = {
-  title: "About — HSZPM",
+  title: "About — APM Support Group",
   description:
-    "Learn about HSZPM's vision, mission, story, and the values that guide the movement.",
+    "About APM Support Group: our vision, mission, story, and the values guiding our support for APM's 2027 ticket.",
 };
 
 const values = [
   {
-    title: "Leadership",
-    text: "We believe change starts with people who are ready to lead — in their households, their streets, and their chapters. HSZPM identifies and trains capable leaders at every level of the movement.",
+    title: "Integrity",
+    text: "APM's motto opens with integrity — a commitment to honest, accountable leadership, and to candidates who are judged on record and character rather than promises alone.",
+  },
+  {
+    title: "Sacrifice",
+    text: "Building a credible national coalition has meant leaders from across the political spectrum choosing the party over convenience, in the belief that the country comes before any one camp.",
   },
   {
     title: "Service",
-    text: "Every programme we run exists to meet a real need. We show up with practical, hands-on service — training, healthcare, clean-up, and mentorship — delivered directly where people live.",
-  },
-  {
-    title: "Progress",
-    text: "We measure ourselves by what changes for our communities: skills gained, health improved, opportunities opened. Progress is steady, visible, and shared by everyone who takes part.",
+    text: "Every policy priority APM has set out — from security to healthcare — is framed as a question of service: what government actually delivers for the people who elect it.",
   },
 ];
 
@@ -26,9 +26,9 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About HSZPM"
-        title="A movement built by its communities, for its communities"
-        description="Halima Suleiman Zakari Progressive Movement organises everyday people around leadership, service, and progress."
+        eyebrow="About Us"
+        title="A grassroots movement backing the 2027 ticket"
+        description="APM Support Group mobilises grassroots backing for Seyi Makinde and Lawal Daura's ticket, carried by the Allied Peoples Movement (APM) into the 2027 general election."
       />
 
       <section className="py-16 sm:py-20">
@@ -36,16 +36,17 @@ export default function AboutPage() {
           <div className="border border-line rounded-md p-8 bg-white">
             <h2 className="font-display font-bold text-2xl text-ink">Our vision</h2>
             <p className="mt-3 text-ink/70 leading-relaxed">
-              A united, empowered community where every citizen has the
-              leadership, opportunity, and support to build a better future.
+              A Nigeria that is secure, prosperous, and governed by leaders
+              who put the country first — the belief behind APM's own
+              slogan, Nigeria First, which we've organised to support.
             </p>
           </div>
           <div className="border border-line rounded-md p-8 bg-white">
             <h2 className="font-display font-bold text-2xl text-ink">Our mission</h2>
             <p className="mt-3 text-ink/70 leading-relaxed">
-              To mobilise grassroots leadership, deliver practical service to
-              underserved communities, and drive sustained progress in
-              education, health, skills, and civic participation.
+              To mobilise grassroots support for the Makinde–Daura ticket
+              ahead of the 2027 general election, guided by the same values
+              behind APM's motto: integrity, sacrifice and service.
             </p>
           </div>
         </div>
@@ -55,28 +56,33 @@ export default function AboutPage() {
         <div className="container-content grid lg:grid-cols-3 gap-10">
           <SectionHeading
             kicker="Our story"
-            title="How HSZPM came to be"
+            title="How APM's 2027 ticket came together"
           />
           <div className="lg:col-span-2 space-y-4 text-ink/70 leading-relaxed">
             <p>
-              HSZPM began as a small circle of neighbours who kept running
-              into the same problem: real needs in the community that no one
-              was organised enough to address. Skills training that never
-              reached the people who needed it. Health screenings that
-              stopped at the edge of town. Young people with energy and no
-              outlet for it.
+              APM Support Group came together as a grassroots movement to
+              mobilise backing for the Allied Peoples Movement's 2027 ticket.
+              APM itself was registered as a political party by Nigeria's
+              electoral commission in August 2018, and ahead of the 2027
+              general election became the platform for Governor Seyi Makinde
+              of Oyo State, who declared his presidential ambition at a
+              unity rally at Mapo Hall in Ibadan alongside officeholders
+              defecting from other parties.
             </p>
             <p>
-              Under the leadership of Halima Suleiman Zakari, that circle
-              grew into a structured, grassroots movement — with chapters,
-              coordinators, and programmes reaching further each year. What
-              hasn't changed is the approach: listen to the community first,
-              then build the programme that fits.
+              Governor Makinde was formally presented with his Certificate
+              of Return as APM's presidential candidate by National Chairman
+              Yusuf Mamman Dantalle. At the party's national convention in
+              Bauchi, Governor Bala Mohammed of Bauchi State was inaugurated
+              as APM's National Leader, and Makinde unveiled former DSS
+              Director-General Lawal Daura as his vice-presidential
+              running mate.
             </p>
             <p>
-              Today, HSZPM runs across multiple zones, bringing together
-              volunteers, local leaders, and partner organisations around one
-              shared theme — leadership, service, and progress.
+              Since then, APM has been building a wider coalition —
+              submitting its presidential and National Assembly nominations
+              to the electoral commission and pointing to growing support
+              from figures in other parties as it heads toward 2027.
             </p>
           </div>
         </div>
@@ -85,8 +91,9 @@ export default function AboutPage() {
       <section className="py-16 sm:py-20">
         <div className="container-content">
           <SectionHeading
-            kicker="What guides us"
-            title="Our core values"
+            kicker="Values we share"
+            title="Integrity, Sacrifice and Service"
+            description="APM's own motto, and the values we've organised our support around."
             align="center"
           />
           <div className="mt-10 grid sm:grid-cols-3 gap-6">

@@ -9,12 +9,11 @@ export default function AboutTeaser() {
         </h2>
         <div className="lg:col-span-2">
           <p className="text-ink/70 text-lg leading-relaxed">
-            HSZPM is a grassroots movement founded to organise everyday
-            people around a shared purpose: capable leadership, real service
-            to communities, and steady, visible progress. From skills
-            training to medical outreach, our chapters work where people
-            live, guided by members who understand their community's needs
-            first-hand.
+            APM Support Group is a grassroots movement mobilising support
+            for the Allied Peoples Movement's 2027 ticket — Seyi Makinde
+            for President and Lawal Daura for Vice President — in
+            communities that believe Nigeria needs a credible,
+            performance-driven alternative.
           </p>
           <Link
             href="/about"

@@ -8,19 +8,19 @@ export default function Hero() {
       <div className="container-content relative py-16 sm:py-24 grid lg:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-green font-medium text-sm">
-            Halima Suleiman Zakari Progressive Movement
+            APM Support Group
           </p>
           <h1 className="mt-3 font-display font-bold text-4xl sm:text-5xl text-ink leading-[1.1]">
-            Leadership. Service. Progress.
+            Nigeria First.
           </h1>
           <p className="mt-5 text-ink/70 text-lg leading-relaxed max-w-lg">
-            HSZPM is a grassroots movement bringing communities together to
-            raise up local leaders, deliver practical service, and build
-            lasting progress from the ground up.
+            We're a grassroots movement mobilising support for Seyi Makinde
+            for President and Lawal Daura for Vice President on APM's
+            platform in the 2027 general election.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Button href="/join" variant="primary">
-              Join now
+              Join the Movement
             </Button>
             <Button href="/donate" variant="gold">
               Donate
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
         <ImagePlaceholder
           seed="hero"
-          label="Community gathering"
+          label="Makinde–Bala 2027 campaign"
           ratio="aspect-[5/4]"
           className="shadow-sm"
         />

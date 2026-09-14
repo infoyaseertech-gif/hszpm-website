@@ -1,8 +1,8 @@
 import PageHero from "@/components/UI/PageHero";
 
 export const metadata = {
-  title: "Contact — HSZPM",
-  description: "Get in touch with HSZPM.",
+  title: "Contact — APM Support Group",
+  description: "Get in touch with APM Support Group.",
 };
 
 export default function ContactPage() {
@@ -11,7 +11,7 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Get in touch"
-        description="Have a question, want to partner with us, or want to bring a programme to your community? Reach out."
+        description="Have a question, want to volunteer, or want to bring the campaign to your community? Reach out."
       />
 
       <section className="py-16 sm:py-20">
@@ -25,7 +25,7 @@ export default function ContactPage() {
                 <div>
                   <dt className="text-ink/50">Address</dt>
                   <dd className="mt-0.5 text-ink/80">
-                    12 Unity Crescent, Central District
+                    Kaduna, Nigeria
                   </dd>
                 </div>
                 <div>
@@ -34,7 +34,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <dt className="text-ink/50">Email</dt>
-                  <dd className="mt-0.5 text-ink/80">info@hszpm.org</dd>
+                  <dd className="mt-0.5 text-ink/80">info@apmsupportgroup.org</dd>
                 </div>
                 <div>
                   <dt className="text-ink/50">Office hours</dt>

@@ -2,8 +2,8 @@ import PageHero from "@/components/UI/PageHero";
 import Button from "@/components/UI/Button";
 
 export const metadata = {
-  title: "Donate — HSZPM",
-  description: "Support HSZPM's community programmes.",
+  title: "Donate — APM",
+  description: "Support APM's 2027 campaign.",
 };
 
 export default function DonatePage() {
@@ -12,7 +12,7 @@ export default function DonatePage() {
       <PageHero
         eyebrow="Donate"
         title="Online giving is coming soon"
-        description="We're setting up a secure way to donate online. Your support will go directly toward HSZPM's community programmes."
+        description="We're setting up a secure way to donate online. Your support will go directly toward APM's 2027 campaign."
       />
       <section className="py-16 sm:py-20">
         <div className="container-content max-w-xl">

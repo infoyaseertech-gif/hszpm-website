@@ -3,8 +3,8 @@ import NewsCard from "@/components/News/NewsCard";
 import { newsArticles } from "@/lib/data";
 
 export const metadata = {
-  title: "News — HSZPM",
-  description: "Updates from HSZPM's chapters and programmes.",
+  title: "News — APM",
+  description: "Reported news on APM's 2027 presidential campaign, its candidates, and party activities.",
 };
 
 export default function NewsPage() {
@@ -12,8 +12,8 @@ export default function NewsPage() {
     <>
       <PageHero
         eyebrow="News"
-        title="Updates from across the movement"
-        description="Stories and updates from HSZPM chapters, programmes, and events."
+        title="APM 2027: the road so far"
+        description="Every story below links to its original source — read the full report before citing any of it."
       />
       <section className="py-16 sm:py-20">
         <div className="container-content grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

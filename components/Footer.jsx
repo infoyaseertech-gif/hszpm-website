@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { navLinks } from "@/lib/data";
 import { socialIcons } from "@/components/icons/SocialIcons";
 
@@ -8,14 +9,14 @@ export default function Footer() {
       <div className="container-content py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-white/10 font-display font-bold">
-              H
+            <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-md bg-white/10">
+              <Image src="/images/apm-logo.jpg" alt="APM logo" fill className="object-contain" />
             </span>
-            <span className="font-display font-bold text-lg">HSZPM</span>
+            <span className="font-display font-bold text-lg">APM Support Group</span>
           </div>
           <p className="mt-4 text-sm text-white/70 leading-relaxed max-w-xs">
-            Halima Suleiman Zakari Progressive Movement — a grassroots
-            community movement built on leadership, service, and progress.
+            A grassroots movement mobilising support for Seyi Makinde and
+            Lawal Daura's 2027 presidential bid on APM's platform.
           </p>
           <div className="mt-5 flex gap-3">
             {socialIcons.map(({ label, Icon, href }) => (
@@ -66,12 +67,12 @@ export default function Footer() {
             </li>
             <li>
               <Link href="/events" className="text-sm text-white/70 hover:text-gold transition-colors">
-                Attend an event
+                Campaign timeline
               </Link>
             </li>
             <li>
               <Link href="/programmes" className="text-sm text-white/70 hover:text-gold transition-colors">
-                Our programmes
+                Our policies
               </Link>
             </li>
           </ul>
@@ -82,17 +83,17 @@ export default function Footer() {
             Contact
           </h3>
           <ul className="mt-4 space-y-2.5 text-sm text-white/70">
-            <li>12 Unity Crescent, Central District</li>
+            <li>APM National Secretariat, Abuja</li>
             <li>+234 800 000 0000</li>
-            <li>info@hszpm.org</li>
+            <li>info@apm2027.org</li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/15">
         <div className="container-content py-5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-white/60">
-          <p>&copy; {new Date().getFullYear()} Halima Suleiman Zakari Progressive Movement. All rights reserved.</p>
-          <p>Leadership. Service. Progress.</p>
+          <p>&copy; {new Date().getFullYear()} APM Support Group. All rights reserved.</p>
+          <p>Nigeria First.</p>
         </div>
       </div>
     </footer>

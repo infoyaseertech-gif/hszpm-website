@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import ImagePlaceholder from "@/components/UI/ImagePlaceholder";
+import { galleryArt } from "@/components/Gallery/GalleryArt";
 
 export default function GalleryGrid({ photos }) {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -33,6 +34,7 @@ export default function GalleryGrid({ photos }) {
             <ImagePlaceholder
               seed={photo.id}
               label={photo.caption}
+              Icon={galleryArt[index % galleryArt.length]}
               className="transition-transform duration-150 group-hover:scale-[1.02]"
             />
           </button>
@@ -53,6 +55,7 @@ export default function GalleryGrid({ photos }) {
             <ImagePlaceholder
               seed={photos[activeIndex].id}
               label={photos[activeIndex].caption}
+              Icon={galleryArt[activeIndex % galleryArt.length]}
               ratio="aspect-[4/3]"
             />
             <button

@@ -2,17 +2,17 @@ import PageHero from "@/components/UI/PageHero";
 import Button from "@/components/UI/Button";
 
 export const metadata = {
-  title: "Join — HSZPM",
-  description: "Join the HSZPM movement.",
+  title: "Join — APM",
+  description: "Join the APM 2027 campaign.",
 };
 
 export default function JoinPage() {
   return (
     <>
       <PageHero
-        eyebrow="Join HSZPM"
+        eyebrow="Join APM"
         title="Membership is coming soon"
-        description="We're putting together a simple way for you to register and join a chapter near you."
+        description="We're putting together a simple way for you to register and join a campaign chapter near you."
       />
       <section className="py-16 sm:py-20">
         <div className="container-content max-w-xl">
@@ -28,8 +28,8 @@ export default function JoinPage() {
             </h2>
             <p className="mt-2 text-sm text-ink/70 leading-relaxed">
               This page will soon let you register as a member and connect
-              with a chapter in your area. In the meantime, reach out to us
-              directly to get involved.
+              with an APM chapter in your area. In the meantime, reach out to
+              us directly to get involved.
             </p>
             <Button href="/contact" variant="primary" className="mt-6">
               Contact us to join

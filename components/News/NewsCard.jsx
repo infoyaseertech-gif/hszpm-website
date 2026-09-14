@@ -8,7 +8,7 @@ function formatDate(dateStr) {
   });
 }
 
-export default function NewsCard({ title, date, excerpt, slug }) {
+export default function NewsCard({ title, date, excerpt, slug, url }) {
   return (
     <article className="border border-line rounded-md bg-white overflow-hidden flex flex-col">
       <ImagePlaceholder seed={slug} />
@@ -20,12 +20,18 @@ export default function NewsCard({ title, date, excerpt, slug }) {
         <p className="mt-2 text-sm text-ink/70 leading-relaxed flex-1">
           {excerpt}
         </p>
-        <a
-          href="#"
-          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-green hover:text-green-dark"
-        >
-          Read more
-        </a>
+        {url ? (
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-green hover:text-green-dark"
+          >
+            Read full story ↗
+          </a>
+        ) : (
+          <span className="mt-4 text-sm text-ink/40">Source pending</span>
+        )}
       </div>
     </article>
   );

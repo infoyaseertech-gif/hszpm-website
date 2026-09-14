@@ -18,6 +18,7 @@ export default function ImagePlaceholder({
   label,
   className = "",
   ratio = "aspect-[4/3]",
+  Icon,
 }) {
   return (
     <div
@@ -25,17 +26,21 @@ export default function ImagePlaceholder({
         seed
       )} bg-green-light ${className}`}
     >
-      <svg
-        viewBox="0 0 40 40"
-        className="absolute inset-0 m-auto h-10 w-10 text-white/70"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.4"
-      >
-        <rect x="5" y="9" width="30" height="22" rx="2" />
-        <circle cx="14" cy="17" r="3" />
-        <path d="M5 27l9-8 8 6 5-4 8 6" />
-      </svg>
+      {Icon ? (
+        <Icon className="absolute inset-0 m-auto h-10 w-10 text-white/70" />
+      ) : (
+        <svg
+          viewBox="0 0 40 40"
+          className="absolute inset-0 m-auto h-10 w-10 text-white/70"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.4"
+        >
+          <rect x="5" y="9" width="30" height="22" rx="2" />
+          <circle cx="14" cy="17" r="3" />
+          <path d="M5 27l9-8 8 6 5-4 8 6" />
+        </svg>
+      )}
       {label ? (
         <span className="absolute bottom-2 left-2 rounded bg-ink/40 px-2 py-0.5 text-[11px] text-white/90">
           {label}

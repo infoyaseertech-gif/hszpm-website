@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { navLinks } from "@/lib/data";
+import Image from "next/image";
 import Button from "@/components/UI/Button";
 
 export default function Navbar() {
@@ -12,11 +13,11 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur">
       <div className="container-content flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-green text-white font-display font-bold">
-            H
+          <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-md">
+            <Image src="/images/apm-logo.jpg" alt="APM logo" fill className="object-contain" />
           </span>
           <span className="font-display font-bold text-lg leading-none text-ink">
-            HSZPM
+            APM Support Group
           </span>
         </Link>
 
@@ -34,7 +35,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-3">
           <Button href="/join" variant="outline" className="px-5 py-2.5">
-            Join now
+            Join the Movement
           </Button>
           <Button href="/donate" variant="gold" className="px-5 py-2.5">
             Donate
@@ -73,7 +74,7 @@ export default function Navbar() {
             ))}
             <div className="flex gap-3 pt-4">
               <Button href="/join" variant="outline" className="flex-1 px-4 py-2.5" onClick={() => setOpen(false)}>
-                Join now
+                Join the Movement
               </Button>
               <Button href="/donate" variant="gold" className="flex-1 px-4 py-2.5" onClick={() => setOpen(false)}>
                 Donate

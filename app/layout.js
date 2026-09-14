@@ -17,9 +17,9 @@ const sora = Sora({
 });
 
 export const metadata = {
-  title: "HSZPM — Halima Suleiman Zakari Progressive Movement",
+  title: "APM Support Group | Backing Makinde–Daura 2027",
   description:
-    "Halima Suleiman Zakari Progressive Movement (HSZPM) is a grassroots community movement built on leadership, service, and progress.",
+    "APM Support Group is a grassroots movement mobilising support for Seyi Makinde and Lawal Daura's 2027 presidential bid on APM's platform.",
 };
 
 export default function RootLayout({ children }) {
